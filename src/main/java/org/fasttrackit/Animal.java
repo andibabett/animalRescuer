@@ -13,7 +13,6 @@ public class Animal {
     String recreationalActivity;
 
 
-    //has-a relationship
-    Game game;
+
 
 }

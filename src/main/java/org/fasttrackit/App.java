@@ -23,8 +23,8 @@ public class App
         food.foodType = "Meal";
         food.price = 10;
         food.amount = 2;
-        food.avaible = "true";
-        food.favoriteFood = "Meal";
+        food.avaible = ;
+        food.expiryDate =
 
         Adopter adopter = new Adopter();
         adopter.name = "Ms";
