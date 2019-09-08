@@ -1,10 +1,8 @@
 package org.fasttrackit;
 
-public class Vet {
+public class Vet extends Rescuer {
 
-    String name;
-    double age;
-    String sex;
+
     String specialization;
     String experience;
 

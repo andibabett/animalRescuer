@@ -1,16 +1,16 @@
 package org.fasttrackit;
 
-public class Animal {
+public class Animal extends Rescuer {
 
-
-    String name;
-    int age;
     int health;
     double hunger;
     int mood;
     double weight;
     String favoriteFood;
     String recreationalActivity;
+
+
+
 
 
 
