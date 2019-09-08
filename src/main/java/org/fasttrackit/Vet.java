@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
-public class Vet extends Rescuer {
+public class Vet extends Game {
+
 
 
     String specialization;

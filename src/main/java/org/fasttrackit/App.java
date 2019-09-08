@@ -6,7 +6,8 @@ package org.fasttrackit;
  */
 public class App 
 {
-    public static void main( String[] args )
+
+    public static void main(String[] args )
     {
         Animal animal = new Animal();
         animal.name = "Caine";
@@ -25,12 +26,12 @@ public class App
         food.amount = 2;
         food.expiryDate =
 
-
         Rescuer rescuer = new Rescuer();
-        rescuer.name = "Ms";
-        rescuer.avaibleMoney = 70;
-        rescuer.age = 30;
-        rescuer.sex = "female";
+        rescuer.name = "Mr";
+        rescuer.avaibleMoney = 50;
+        rescuer.sex = "male";
+        rescuer.age = 5;
+
 
         Vet vet = new Vet();
         vet.name = "Doctor";
@@ -49,7 +50,6 @@ public class App
 
         System.out.println( "Hello Animalute!" );
         System.out.println(animal.name);
-        System.out.println(animal.age);
         System.out.println(animal.favoriteFood);
         System.out.println(animal.health);
         System.out.println(vet.name);
@@ -58,6 +58,7 @@ public class App
         System.out.println(food.foodType);
         System.out.println(food.price);
 
+        System.out.println((animal.game));
 
 
 

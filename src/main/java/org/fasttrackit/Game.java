@@ -1,7 +1,16 @@
 package org.fasttrackit;
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 public class Game {
 
-    String Play;
+
+    String name;
+    String sex;
+    int age;
+
+
+
+
 
 }
