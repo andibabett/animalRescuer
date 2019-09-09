@@ -24,7 +24,7 @@ public class App
         food.foodType = "Meal";
         food.price = 10;
         food.amount = 2;
-        food.expiryDate =
+
 
         Rescuer rescuer = new Rescuer();
         rescuer.name = "Mr";
@@ -44,21 +44,22 @@ public class App
         recreationalActivity.sleep = "yes";
        recreationalActivity.time = 5;
 
+       Game game =  new Game();
+       game.Dog = "running";
+       game.Rescuer = "hugs";
+       game.Vet = "teaching";
 
 
-
-
-        System.out.println( "Hello Animalute!" );
+       System.out.println( "Hello Animalute!" );
         System.out.println(animal.name);
         System.out.println(animal.favoriteFood);
-        System.out.println(animal.health);
         System.out.println(vet.name);
         System.out.println(vet.experience);
         System.out.println(vet.specialization);
         System.out.println(food.foodType);
         System.out.println(food.price);
 
-        System.out.println((animal.game));
+
 
 
 

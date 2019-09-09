@@ -1,18 +1,20 @@
 package org.fasttrackit;
 
-public class Animal extends Rescuer {
+public class Animal {
 
     public String name;
     int health;
     double hunger;
+    double age;
     int mood;
     double weight;
     String favoriteFood;
     String recreationalActivity;
 
+    public Animal (Game game) {super (game);  }
 
-public Animal (Game game) { super(game);}
 
 
-   }
-}
+
+
+

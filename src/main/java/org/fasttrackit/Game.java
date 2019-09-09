@@ -5,9 +5,10 @@ import java.security.spec.RSAOtherPrimeInfo;
 public class Game {
 
 
-    String name;
-    String sex;
-    int age;
+    String Rescuer;
+    String Dog;
+    String Vet;
+
 
 
 
