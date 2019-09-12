@@ -3,18 +3,46 @@ package org.fasttrackit;
 public class Food extends RecreationalActivity{
 
 
-    String foodType;
-    double price;
-    double amount;
-    double expiryDate;
+   private String foodType;
+   private double price;
+   private double amount;
+   private double expiryDate;
 
 
     public Food(String foodType) {
+        super(foodType);
         this.foodType = foodType;
     }
-}
 
+    public String getFoodType() {
+        return foodType;
+    }
 
+    public void setFoodType(String foodType) {
+        this.foodType = foodType;
+    }
 
+    public double getPrice() {
+        return price;
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public double getExpiryDate() {
+        return expiryDate;
+    }
+
+    public void setExpiryDate(double expiryDate) {
+        this.expiryDate = expiryDate;
+    }
 }

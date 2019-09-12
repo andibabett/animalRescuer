@@ -2,17 +2,55 @@ package org.fasttrackit;
 
 public class Rescuer  {
 
-    String name;
-    String sex;
-    int age;
-    double avaibleMoney;
-    String place;
+   private String name;
+   private String sex;
+   private int age;
+   private double avaibleMoney;
+   private String place;
 
     public Rescuer(int age) {
         this.age = age;
     }
 
-    public void adoptAnimal(Animal animal){
-        animal.mood = 10;
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getAvaibleMoney() {
+        return avaibleMoney;
+    }
+
+    public void setAvaibleMoney(double avaibleMoney) {
+        this.avaibleMoney = avaibleMoney;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+
 }

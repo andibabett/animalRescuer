@@ -10,103 +10,87 @@ public class App
     public static void main(String[] args )
     {
         Animal animal = new Animal();
-        animal.name = "Caine";
-        animal.age = 1;
-        animal.health = 9;
-        animal.hunger = 5;
-        animal.mood = 5;
-        animal.weight = 12.6;
-
+        animal.setName("Misa");
+        animal.setAge(1);
+        animal.setHealth(9);
+        animal.setHunger(5);
+        animal.setMood(5);
+        animal.setWeight(12.6);
 
         Food food = new Food("AnimalFood");
-        food.price = 10;
-        food.amount = 2;
+        food.setPrice(10);
+        food.setAmount(2);
 
+        Rescuer rescuer = new Rescuer(28);
+        rescuer.setName("Andi");
+        rescuer.setAvaibleMoney(50);
+        rescuer.setSex("female");
 
-        Rescuer rescuer = new Rescuer(20);
-        rescuer.name = "Mr";
-        rescuer.avaibleMoney = 50;
-        rescuer.sex = "male";
+        Vet vet = new Vet(50,true);
+        vet.setName("Doctor");
+        vet.setSpecialization("animalBehavior");
+        vet.setSex("male");
 
+        RecreationalActivity recreationalActivity = new RecreationalActivity(5,true);
 
-
-        Vet vet = new Vet();
-        vet.name = "Doctor";
-        vet.age = 25;
-        vet.experience = "false";
-        vet.specialization = "animalBehavior";
-        vet.sex = "Male";
-
-
-
-
-       Game game =  new Game();
-       game.Dog = "running";
-       game.Rescuer = "hugs";
-       game.Vet = "teaching";
 
 
        System.out.println( "Hello Animalute!" );
-        System.out.println(vet.name);
-        System.out.println(vet.experience);
-        System.out.println(vet.specialization);
-        System.out.println(food.foodType);
-        System.out.println(food.price);
-
-
-
-
-
-
+        System.out.println(vet.getName());
+        System.out.println(vet.getAge());
+        System.out.println(vet.getSpecialization());
+        System.out.println(food.getFoodType());
+        System.out.println(food.getPrice());
 
 
 
         Animal animal2 = new Animal();
-        animal2.name = "Pisica";
-        animal2.age = 2;
-        animal2.health = 6;
-        animal2.hunger = 2;
-        animal2.mood = 8;
-        animal2.weight = 2.2;
+        animal2.setName("Pisica");
+        animal2.setAge(3);
+        animal2.setHealth(5);
+        animal2.setHunger(3);
+        animal2.setMood(7);
+        animal2.setWeight(2.2);
 
-        Food food2 = new Food();
-        food2.foodType = "Milk";
-        food2.amount = 0.5;
-        food2.price = 15.33;
+        Food food2 = new Food("AnimalFood");
+        food2.setPrice(7);
+        food2.setAmount(0.5);
 
-        Rescuer rescuer2 = new Rescuer();
-        rescuer2.name = "Mr";
-        rescuer2.avaibleMoney = 50;
-        rescuer2.sex = "male";
-        rescuer2.age = 5;
-
-        Vet vet2 = new Vet (50, 25);
-        vet2.name = "Medic";
+        Rescuer rescuer2 = new Rescuer(34);
+        rescuer2.setName("Marian");
+        rescuer2.setAvaibleMoney(500);
+        rescuer2.setAge(34);
+        rescuer2.setSex("male");
 
 
-        RecreationalActivity recreationalActivity = new RecreationalActivity(3,"yes");
+        Vet vet2 = new Vet (50, true);
+        vet2.setName("Medic");
+        vet2.setName("Doctor");
+        vet2.setSpecialization("animalBehavior");
+        vet2.setSex("male");
+
+
+        RecreationalActivity recreationalActivity2 = new RecreationalActivity(0,false);
+
+
+        System.out.println(rescuer2.getSex());
+        System.out.println(animal2.getAge());
+        System.out.println(rescuer2.getAvaibleMoney());
+        System.out.println(animal2.getHealth());
+        System.out.println(rescuer2.getName());
+        System.out.println(vet2.getName());
+        System.out.println(vet2.isExperience());
+        System.out.println(vet2.getSpecialization());
+        System.out.println(food2.getFoodType());
+        System.out.println(food2.getPrice());
 
 
 
-
-        System.out.println(rescuer2.sex);
-        System.out.println(animal2.age);
-        System.out.println(rescuer2.avaibleMoney);
-        System.out.println(animal2.health);
-        System.out.println(rescuer2.name);
-        System.out.println(vet2.name);
-        System.out.println(vet2.experience);
-        System.out.println(vet2.specialization);
-        System.out.println(food2.foodType);
-        System.out.println(food2.price);
-
-
-
-        System.out.println("animal2 name: " + animal2.name);
-        System.out.println("animal name: " + animal.name);
-        System.out.println("vet2 name: " + vet2.name);
-        System.out.println("vet1 name: " + vet.name);
-        System.out.println("adopter2 name: " + rescuer2.name);
+        System.out.println("animal2 name: " + animal2.getName());
+        System.out.println("animal name: " + animal.getName());
+        System.out.println("vet2 name: " + vet2.getName());
+        System.out.println("vet1 name: " + vet.getName());
+        System.out.println("rescuer2 name: " + rescuer2.getName());
 
 
 
