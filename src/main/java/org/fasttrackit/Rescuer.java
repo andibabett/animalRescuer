@@ -8,6 +8,7 @@ public class Rescuer  {
    private double avaibleMoney;
    private String place;
 
+
     public Rescuer(int age) {
         this.age = age;
     }
@@ -53,4 +54,8 @@ public class Rescuer  {
     }
 
 
+    public void feed (Animal, Food){
+
+        System.out.println (Rescuer + "feeding" + Food + "to feed" + Animal );
+    }
 }
