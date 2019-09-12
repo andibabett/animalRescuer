@@ -8,10 +8,9 @@ public class Animal {
     double age;
     int mood;
     double weight;
-    String favoriteFood;
-    String recreationalActivity;
 
-    public Animal (Game game) {super (game);  }
+
+
 
 
 

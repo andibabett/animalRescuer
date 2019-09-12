@@ -7,7 +7,10 @@ public class RecreationalActivity {
     double time;
 
 
-
+    public RecreationalActivity(double time, String sleep) {
+        this.time = time;
+        this.sleep = sleep;
+    }
 
 
 }

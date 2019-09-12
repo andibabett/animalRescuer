@@ -15,22 +15,19 @@ public class App
         animal.health = 9;
         animal.hunger = 5;
         animal.mood = 5;
-        animal.favoriteFood = "Meal";
-        animal.recreationalActivity = "eat";
         animal.weight = 12.6;
 
 
-        Food food = new Food();
-        food.foodType = "Meal";
+        Food food = new Food("AnimalFood");
         food.price = 10;
         food.amount = 2;
 
 
-        Rescuer rescuer = new Rescuer();
+        Rescuer rescuer = new Rescuer(20);
         rescuer.name = "Mr";
         rescuer.avaibleMoney = 50;
         rescuer.sex = "male";
-        rescuer.age = 5;
+
 
 
         Vet vet = new Vet();
@@ -40,9 +37,8 @@ public class App
         vet.specialization = "animalBehavior";
         vet.sex = "Male";
 
-        RecreationalActivity recreationalActivity = new RecreationalActivity();
-        recreationalActivity.sleep = "yes";
-       recreationalActivity.time = 5;
+
+
 
        Game game =  new Game();
        game.Dog = "running";
@@ -51,14 +47,11 @@ public class App
 
 
        System.out.println( "Hello Animalute!" );
-        System.out.println(animal.name);
-        System.out.println(animal.favoriteFood);
         System.out.println(vet.name);
         System.out.println(vet.experience);
         System.out.println(vet.specialization);
         System.out.println(food.foodType);
         System.out.println(food.price);
-
 
 
 
@@ -74,8 +67,6 @@ public class App
         animal2.health = 6;
         animal2.hunger = 2;
         animal2.mood = 8;
-        animal2.favoriteFood = "Milk";
-        animal2.recreationalActivity = "sleep";
         animal2.weight = 2.2;
 
         Food food2 = new Food();
@@ -89,24 +80,17 @@ public class App
         rescuer2.sex = "male";
         rescuer2.age = 5;
 
-        Vet vet2 = new Vet();
+        Vet vet2 = new Vet (50, 25);
         vet2.name = "Medic";
-        vet2.age = 50;
-        vet2.experience = "true";
-        vet2.specialization = "animalWelfare";
-
-        RecreationalActivity recreationalActivity2 = new RecreationalActivity();
-        recreationalActivity2.sleep = "no";
-        recreationalActivity2.time = 0;
 
 
+        RecreationalActivity recreationalActivity = new RecreationalActivity(3,"yes");
 
 
 
 
         System.out.println(rescuer2.sex);
         System.out.println(animal2.age);
-        System.out.println(animal2.favoriteFood);
         System.out.println(rescuer2.avaibleMoney);
         System.out.println(animal2.health);
         System.out.println(rescuer2.name);
