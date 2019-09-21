@@ -1,12 +1,17 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
+
 public class Food extends RecreationalActivity{
 
 
    private String foodType;
    private double price;
    private double amount;
-   private double expiryDate;
+    public localDate localDate;
+
+
+
 
 
     public Food(String foodType) {
@@ -44,5 +49,8 @@ public class Food extends RecreationalActivity{
 
     public void setExpiryDate(double expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    public void localDate() {
     }
 }

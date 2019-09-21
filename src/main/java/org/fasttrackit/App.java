@@ -2,13 +2,10 @@ package org.fasttrackit;
 
 /**
  * Hello animalute!
- *
  */
-public class App 
-{
+public class App {
 
-    public static void main(String[] args )
-    {
+    public static void main(String[] args) {
         Animal animal = new Animal();
         animal.setName("Misa");
         animal.setAge(1);
@@ -20,28 +17,29 @@ public class App
         Food food = new Food("AnimalFood");
         food.setPrice(10);
         food.setAmount(2);
+        food.localDate();
+
+        RecreationalActivity recreationalActivity = new RecreationalActivity();
+        recreationalActivity.name = "run";
+
 
         Rescuer rescuer = new Rescuer(28);
         rescuer.setName("Andi");
         rescuer.setAvaibleMoney(50);
         rescuer.setSex("female");
 
-        Vet vet = new Vet(50,true);
+        Vet vet = new Vet(50, true);
         vet.setName("Doctor");
         vet.setSpecialization("animalBehavior");
         vet.setSex("male");
 
-        RecreationalActivity recreationalActivity = new RecreationalActivity(5,true);
 
-
-
-       System.out.println( "Hello Animalute!" );
+        System.out.println("Hello Animalute!");
         System.out.println(vet.getName());
         System.out.println(vet.getAge());
         System.out.println(vet.getSpecialization());
         System.out.println(food.getFoodType());
         System.out.println(food.getPrice());
-
 
 
         Animal animal2 = new Animal();
@@ -63,14 +61,11 @@ public class App
         rescuer2.setSex("male");
 
 
-        Vet vet2 = new Vet (50, true);
+        Vet vet2 = new Vet(50, true);
         vet2.setName("Medic");
         vet2.setName("Doctor");
         vet2.setSpecialization("animalBehavior");
         vet2.setSex("male");
-
-
-        RecreationalActivity recreationalActivity2 = new RecreationalActivity(0,false);
 
 
         System.out.println(rescuer2.getSex());
@@ -85,14 +80,11 @@ public class App
         System.out.println(food2.getPrice());
 
 
-
         System.out.println("animal2 name: " + animal2.getName());
         System.out.println("animal name: " + animal.getName());
         System.out.println("vet2 name: " + vet2.getName());
         System.out.println("vet1 name: " + vet.getName());
         System.out.println("rescuer2 name: " + rescuer2.getName());
-
-
 
 
     }

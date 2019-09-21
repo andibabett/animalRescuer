@@ -1,12 +1,8 @@
 package org.fasttrackit;
 
-public class Rescuer  {
+public class Rescuer extends Person {
 
-   private String name;
-   private String sex;
-   private int age;
-   private double avaibleMoney;
-   private String place;
+
 
 
     public Rescuer(int age) {
@@ -54,8 +50,8 @@ public class Rescuer  {
     }
 
 
-    public void feed (Animal, Food){
+    public void feed (Animal, Food) {
 
-        System.out.println (Rescuer + "feeding" + Food + "to feed" + Animal );
+        System.out.println(Rescuer + "feeding" + Food + "to feed" + Animal);
     }
 }
