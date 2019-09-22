@@ -14,7 +14,7 @@ public class App {
         animal.setMood(5);
         animal.setWeight(12.6);
 
-        Food food = new Food("AnimalFood");
+        Food food = new Food("Purina");
         food.setPrice(10);
         food.setAmount(2);
         food.localDate();
@@ -23,8 +23,7 @@ public class App {
         recreationalActivity.name = "run";
 
 
-        Rescuer rescuer = new Rescuer(28);
-        rescuer.setName("Andi");
+        Rescuer rescuer = new Rescuer(28, "Andi");
         rescuer.setAvaibleMoney(50);
         rescuer.setSex("female");
 
@@ -42,6 +41,8 @@ public class App {
         System.out.println(food.getPrice());
 
 
+        System.out.println(animal);
+
         Animal animal2 = new Animal();
         animal2.setName("Pisica");
         animal2.setAge(3);
@@ -50,12 +51,11 @@ public class App {
         animal2.setMood(7);
         animal2.setWeight(2.2);
 
-        Food food2 = new Food("AnimalFood");
+        Food food2 = new Food("Purina");
         food2.setPrice(7);
         food2.setAmount(0.5);
 
-        Rescuer rescuer2 = new Rescuer(34);
-        rescuer2.setName("Marian");
+        Rescuer rescuer2 = new Rescuer(34, "Marian");
         rescuer2.setAvaibleMoney(500);
         rescuer2.setAge(34);
         rescuer2.setSex("male");

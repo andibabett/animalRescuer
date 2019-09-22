@@ -1,12 +1,11 @@
 package org.fasttrackit;
 
-public class Rescuer extends Person {
+public class Rescuer<mood, name> extends Person {
 
 
-
-
-    public Rescuer(int age) {
+    public Rescuer(int age, String name) {
         this.age = age;
+        this.name = name;
     }
 
     public String getName() {
@@ -45,13 +44,19 @@ public class Rescuer extends Person {
         return place;
     }
 
-    public void setPlace(String place) {
-        this.place = place;
-    }
+
+    public String feed(name, Food){
+
+        System.out.println(name + "gave some" + Food + "to feed" + Animal);
 
 
-    public void feed (Animal, Food) {
+     String feed = name + Food;
+     int mood -= feed;
 
-        System.out.println(Rescuer + "feeding" + Food + "to feed" + Animal);
+
+
     }
 }
+
+
+

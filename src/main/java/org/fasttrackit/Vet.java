@@ -1,12 +1,11 @@
 package org.fasttrackit;
 
-public class Vet extends Person{
+public class Vet extends Person {
 
 
-
-  private String specialization;
-  private boolean experience;
-  private double price;
+    private String specialization;
+    private boolean experience;
+    private double price;
 
 
     public Vet(int age, boolean experience) {
