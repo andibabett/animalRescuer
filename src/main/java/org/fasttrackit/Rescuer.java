@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Rescuer extends Person {
+public class Rescuer<name> extends Person {
 
 
     public Rescuer(int age, String name) {
@@ -45,17 +45,24 @@ public class Rescuer extends Person {
     }
 
 
-    public String feed(String name, String foodType) {
+    public String feed(name) {
+        return feed("Andi", "Purina" );
+    }
 
-        System.out.println(getName() + "gave some" + foodType + "to feed" + getName());
+    public String feed(String animal.name, String foodType) {
+
+        System.out.println(getName() + "gave some" + foodType + "to feed" + name);
 
 
         String feed;
-        feed = getName() + foodType;
+
+
+        int getMood;
+        feed = 2* getMood;
 
 
 
-        System.out.println(getName() + "mood is" + mood);
+        System.out.println(getName() + "mood is" + getMood);
 
 return feed;
 

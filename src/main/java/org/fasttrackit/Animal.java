@@ -59,9 +59,10 @@ class Animal {
     }
 
 
-
-
     public Animal(int mood) {
+        getMood(5);
+
+
 
     }
 

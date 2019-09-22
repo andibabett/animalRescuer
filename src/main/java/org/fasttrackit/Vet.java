@@ -18,7 +18,7 @@ public class Vet extends Person {
     }
 
     public void healAnimal(Animal animal) {
-        animal.getMood(10);
+        animal.getMood(2);
         animal.getWeight(null);
 
     }
