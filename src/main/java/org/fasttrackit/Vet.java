@@ -23,6 +23,11 @@ public class Vet extends Person {
 
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     public String getName() {
         return name;
     }
