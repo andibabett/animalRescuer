@@ -2,12 +2,20 @@ package org.fasttrackit;
 
 public class Rescuer extends Person {
 
+
+
+
     private Object Rescuer;
 
     public Rescuer(int age, String name) {
         this.age = age;
         this.name = name;
     }
+
+    public static void main(String[] args) {
+
+    }
+
 
     public String getName() {
         return name;
@@ -50,8 +58,8 @@ public class Rescuer extends Person {
         return feed("Purina");
     }
 
-    public String feed(String name, String getFoodType) {
-        return null;
+    public int feed(String name, String getFoodType) {
+
 
 
         System.out.println(name + "gave some" + getFoodType + "to feed" + Animal.class);
