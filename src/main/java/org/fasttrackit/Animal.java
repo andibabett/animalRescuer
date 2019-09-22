@@ -73,4 +73,31 @@ class Animal {
     public int getMood() {
         return mood;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", health=" + health +
+                ", hunger=" + hunger +
+                ", age=" + age +
+                ", mood=" + mood +
+                ", weight=" + weight +
+                '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
