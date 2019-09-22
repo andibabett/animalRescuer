@@ -6,12 +6,11 @@ package org.fasttrackit;
 public class App {
 
     public static void main(String[] args) {
-        Animal animal = new Animal();
+        Animal animal = new Animal(2);
         animal.setName("Misa");
         animal.setAge(1);
         animal.setHealth(9);
         animal.setHunger(5);
-        animal.setMood(5);
         animal.setWeight(12.6);
 
         Food food = new Food("Purina");
@@ -43,12 +42,11 @@ public class App {
 
         System.out.println(animal);
 
-        Animal animal2 = new Animal();
+        Animal animal2 = new Animal(7);
         animal2.setName("Pisica");
         animal2.setAge(3);
         animal2.setHealth(5);
         animal2.setHunger(3);
-        animal2.setMood(7);
         animal2.setWeight(2.2);
 
         Food food2 = new Food("Purina");

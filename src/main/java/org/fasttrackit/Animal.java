@@ -9,6 +9,7 @@ class Animal {
     private int mood;
     private double weight;
 
+
     public String getName() {
         return name;
     }
@@ -55,5 +56,16 @@ class Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+
+
+
+    public Animal(int mood) {
+
+    }
+
+    public int getMood() {
+        return mood;
     }
 }

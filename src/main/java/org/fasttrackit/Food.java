@@ -46,4 +46,5 @@ public class Food<localDate> {
 
     public void localDate() {
     }
+
 }

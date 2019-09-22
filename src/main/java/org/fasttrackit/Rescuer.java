@@ -45,18 +45,23 @@ public class Rescuer extends Person {
     }
 
 
-    public static void (Rescuer.class, Food.class)  {
+    public String feed(String name, String foodType) {
 
-        System.out.println(Rescuer.class + "gave some" + Food.class + "to feed" + Animal.class);
-
-
-     String feed = Food.class + Rescuer.class;
-     int mood -= feed;
+        System.out.println(getName() + "gave some" + foodType + "to feed" + getName());
 
 
+        String feed;
+        feed = getName() + foodType;
+
+
+
+        System.out.println(getName() + "mood is" + mood);
+
+return feed;
 
     }
-}
+    }
+
 
 
 
