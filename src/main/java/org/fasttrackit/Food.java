@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
+
 public class Food<localDate> {
 
 
@@ -8,7 +10,12 @@ public class Food<localDate> {
     private double amount;
     private localDate expiryDate;
 
+    LocalDate currentDate = LocalDate.now();
 
+    public void setExpiryDate(localDate expiryDate) {
+        this.expiryDate = expiryDate;
+
+    }
 
     public Food(String foodType) {
         this.foodType = foodType;

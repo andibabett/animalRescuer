@@ -2,6 +2,7 @@ package org.fasttrackit;
 
 public class Rescuer extends Person {
 
+    private Object Rescuer;
 
     public Rescuer(int age, String name) {
         this.age = age;
@@ -45,29 +46,47 @@ public class Rescuer extends Person {
     }
 
 
-    public String feed(name) {
-        return feed("Misa", "Purina" );
+    public String feed(String foodType) {
+        return feed("Purina");
     }
 
-    public String feed(String animal.name, String getFoodType); {
+    public String feed(String name, String getFoodType) {
+        return null;
 
-        System.out.println(getName() + "gave some" + getFoodType + "to feed" + name);
+
+        System.out.println(name + "gave some" + getFoodType + "to feed" + Animal.class);
 
 
-        String feed;
-        feed=
+        int feed;
+
 
         int getMood = 3;
-        getMood = 2* getMood;
+        getMood = 2 * getMood;
 
-
-
+        feed = getMood* 2;
         System.out.println(getName() + "mood is" + getMood);
 
-return feed;
+        return feed;
 
     }
+
+    private String setName() {
+        return null;
     }
+
+    @Override
+    public String toString() {
+        return "Rescuer{" +
+                "Rescuer=" + Rescuer +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age=" + age +
+                ", avaibleMoney=" + avaibleMoney +
+                ", place='" + place + '\'' +
+                '}';
+    }
+}
+
 
 
 

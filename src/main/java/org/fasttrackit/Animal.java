@@ -9,6 +9,10 @@ class Animal {
     private int mood;
     private double weight;
 
+    public Animal() {
+        super();
+    }
+
 
     public String getName() {
         return name;
