@@ -1,97 +1,32 @@
 package org.fasttrackit;
 
 public class Rescuer extends Person {
+    //parametrii
+    private double avaibleMoney;
+    private String place;
 
-
-
-
-    private Object Rescuer;
-
-    public Rescuer(int age, String name) {
-        this.age = age;
-        this.name = name;
+    //constructor
+    public Rescuer(double avaibleMoney, String place) {
+        this.avaibleMoney = avaibleMoney;
+        this.place = place;
+    }
+    //metoda
+    public void recreationalActivity(RecreationalActivity activity, Animal animal) {
+        System.out.println(name + "play" + activity.getName() + "cu animalul" + animal.getName());
     }
 
-    public static void main(String[] args) {
-
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
+    //get-set
     public double getAvaibleMoney() {
         return avaibleMoney;
     }
-
     public void setAvaibleMoney(double avaibleMoney) {
         this.avaibleMoney = avaibleMoney;
     }
-
     public String getPlace() {
         return place;
     }
-
-
-    public String feed(String foodType) {
-        return feed("Purina");
-    }
-
-    public int feed(String name, String getFoodType) {
-
-
-
-        System.out.println(name + "gave some" + getFoodType + "to feed" + Animal.class);
-
-
-        int feed;
-
-
-        int getMood = 3;
-        getMood = 2 * getMood;
-
-        feed = getMood* 2;
-        System.out.println(getName() + "mood is" + getMood);
-
-        return feed;
-
-    }
-
-    private String setName() {
-        return null;
-    }
-
-    @Override
-    public String toString() {
-        return "Rescuer{" +
-                "Rescuer=" + Rescuer +
-                ", name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", age=" + age +
-                ", avaibleMoney=" + avaibleMoney +
-                ", place='" + place + '\'' +
-                '}';
+    public void setPlace(String place) {
+        this.place = place;
     }
 }
 

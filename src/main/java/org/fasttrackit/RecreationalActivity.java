@@ -2,38 +2,30 @@ package org.fasttrackit;
 
 public class RecreationalActivity {
 
+    // parametrii
+    private String name;
+    private double time;
 
-    String name;
-    double time;
-
+    // constructor
     public RecreationalActivity(String name, double time) {
+        this.name = name;
+        this.time = time;
     }
+    // metoda
+    public void activity()
 
-
-    public RecreationalActivity() {
-        super();
+    // get-set
+    public String getName() {
+        return name;
     }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
+    public void setName(String name) {
+        this.name = name;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public double getTime() {
+        return time;
     }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    public void RecreationalActivity(String name, double time) {
-        RecreationalActivity recreationalActivity = new RecreationalActivity("playWithBall", 5);
-
-
-        System.out.println(name + "is good for" + Animal.class);
+    public void setTime(double time) {
+        this.time = time;
     }
 
     @Override

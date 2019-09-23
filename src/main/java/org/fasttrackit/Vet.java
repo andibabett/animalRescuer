@@ -8,50 +8,13 @@ public class Vet extends Person {
     private double price;
 
 
-    public Vet(int age, boolean experience) {
-        this.age = age;
+    // constructor
+    public Vet(String specialization, boolean experience) {
+        this.specialization = specialization;
         this.experience = experience;
     }
 
-    public Vet(String specialization) {
-        this.specialization = specialization;
-    }
-
-    public void healAnimal(Animal animal) {
-        animal.getMood(2);
-        animal.getWeight(null);
-
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
+    // get-set
     public String getSpecialization() {
         return specialization;
     }
@@ -75,4 +38,5 @@ public class Vet extends Person {
     public void setPrice(double price) {
         this.price = price;
     }
+
 }

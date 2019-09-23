@@ -1,7 +1,6 @@
 package org.fasttrackit;
 
 
-
 public class Game {
 
     Vet vet;

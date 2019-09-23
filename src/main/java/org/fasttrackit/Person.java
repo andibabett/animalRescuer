@@ -5,7 +5,7 @@ public class Person {
      String name;
      String sex;
      int age;
-     double avaibleMoney;
-     String place;
 
+
+    // set and get si construct
     }

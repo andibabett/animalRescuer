@@ -6,14 +6,28 @@ class Animal {
     private int health;
     private double hunger;
     private double age;
-    private int mood;
+    private double mood;
     private double weight;
 
-    public Animal() {
-        super();
+    //constructor
+    public Animal(int health, double hunger, int mood) {
+        this.health = health;
+        this.hunger = hunger;
+        this.mood = mood;
     }
 
+    public Animal(String name) {
+        this.name = name;
+    }
 
+    public void mood(int health, double hunger){
+        mood = health + hunger;
+        System.out.println("If" + getName()+ "is healthy, he's mood is" + mood );
+    }
+    public void mood() {
+        System.out.println(name + "this is mood");
+    }
+// get-set
     public String getName() {
         return name;
     }
@@ -46,10 +60,6 @@ class Animal {
         this.age = age;
     }
 
-    public int getMood(int i) {
-        return mood;
-    }
-
     public void setMood(int mood) {
         this.mood = mood;
     }
@@ -63,17 +73,6 @@ class Animal {
     }
 
 
-    public Animal(int mood) {
-        getMood(5);
-
-
-
-    }
-
-    public int getMood() {
-        return mood;
-    }
-
     @Override
     public String toString() {
         return "Animal{" +
@@ -86,18 +85,4 @@ class Animal {
                 '}';
     }
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
 }
