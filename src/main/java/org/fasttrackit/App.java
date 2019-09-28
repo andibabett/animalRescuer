@@ -10,7 +10,7 @@ public class App {
     }
     public static void main(String[] args) {
 
-        Animal animal = new Animal(9,5.6, 8);
+        Animal animal = new Animal(9, 6, 8);
         animal.setName("Misa");
         animal.setAge(1);
         animal.setWeight(12.6);
@@ -24,11 +24,11 @@ public class App {
 
         Vet vet = new Vet("animalBehavior", true);
 
-        Animal animal2 = new Animal(5, 6.3, 9);
+        Animal animal2 = new Animal(5, 5, 9);
         animal2.setAge(3);
         animal2.setWeight(2.2);
 
-        Food food2 = new Food("Purina", 30, 22.03.2022);
+        Food food2 = new Food("Purina", 30, 2022.03.22);
         food2.setAmount(0.5);
 
         Rescuer rescuer2 = new Rescuer(200,"house");
@@ -40,6 +40,7 @@ public class App {
 
 
         System.out.println(rescuer+ "give some" + food + "to feed" + animal);
+        System.out.println(rescuer.getName() + recreationalActivity.getName() + "with" + animal.getName() + ". So" + animal.getName() + "'s mood is"  + animal.getMood());
 
     }
 

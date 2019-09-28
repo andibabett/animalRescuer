@@ -8,17 +8,19 @@ public class Rescuer extends Person {
     private String place;
 
     //constructor
-    public Rescuer(double avaibleMoney, String place) {
+   public Rescuer(double avaibleMoney, String place) {
         this.avaibleMoney = avaibleMoney;
         this.place = place;
     }
 
     //metoda
     public void feed(Animal animal, Food foodtype, double hunger) {
-        System.out.println(name + "gave some" + foodtype + "food to" + animal.getName());
-        if (feed(); = animal.getHunger() + 1 ;)
-        System.out.println("If wee feed" + animal.getName() + "with" + foodtype + "hi's hunger will be" + animal.getHunger());
+        System.out.println(getName() + "gave some" + foodtype + "food to" + animal.getName());
+        if (feed("Misa", "Purina", 5); = animal.getHunger() + 1 ;)
+        System.out.println("If I feed" + animal.getName() + "with" + foodtype + "hi's hunger will be" + animal.getHunger());
     }
+
+
 
 
     //get-set

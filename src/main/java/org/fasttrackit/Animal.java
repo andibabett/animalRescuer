@@ -4,28 +4,24 @@ class Animal {
 
     private String name;
     private int health;
-    private double hunger;
+    private int hunger;
     private double age;
     private double mood;
     private double weight;
 
     //constructor
-    public Animal(int health, double hunger, int mood) {
+    public Animal(int health, int hunger, int mood) {
         this.health = health;
         this.hunger = hunger;
         this.mood = mood;
     }
 
+
+    // get-set
     public Animal(String name) {
         this.name = name;
     }
 
-    public void mood(int health, double hunger){
-        mood = health + hunger;
-        System.out.println("If" + getName()+ "is " +  +"he's mood is" + mood );
-    }
-
-// get-set
     public String getName() {
         return name;
     }
@@ -46,7 +42,7 @@ class Animal {
         return hunger;
     }
 
-    public void setHunger(double hunger) {
+    public void setHunger(int hunger) {
         this.hunger = hunger;
     }
 
@@ -58,18 +54,21 @@ class Animal {
         this.age = age;
     }
 
-    public void setMood(int mood) {
+    public double getMood() {
+        return mood;
+    }
+
+    public void setMood(double mood) {
         this.mood = mood;
     }
 
-    public double getWeight(Object o) {
+    public double getWeight() {
         return weight;
     }
 
     public void setWeight(double weight) {
         this.weight = weight;
     }
-
 
     @Override
     public String toString() {

@@ -45,5 +45,4 @@ public class Food {
     public Food() {
         super();
     }
-
-}
+    }
