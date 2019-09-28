@@ -13,6 +13,7 @@ public class Rescuer extends Person {
 
     //metoda
     public void feed(Animal animal, Food foodtype,) {
+       double feed = animal.getMood() + 1;
         System.out.println(getName() + "gave some" + foodtype + "food to" + animal.getName());
 
     }
@@ -31,6 +32,14 @@ public class Rescuer extends Person {
 
     public void setPlace(String place) {
         this.place = place;
+    }
+
+    @Override
+    public String toString() {
+        return "Rescuer{" +
+                "avaibleMoney=" + avaibleMoney +
+                ", place='" + place + '\'' +
+                '}';
     }
 
 }

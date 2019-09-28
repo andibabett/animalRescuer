@@ -39,5 +39,12 @@ public class Vet extends Person {
         this.price = price;
     }
 
-
+    @Override
+    public String toString() {
+        return "Vet{" +
+                "specialization='" + specialization + '\'' +
+                ", experience=" + experience +
+                ", price=" + price +
+                '}';
+    }
 }

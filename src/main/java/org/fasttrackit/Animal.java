@@ -21,7 +21,10 @@ class Animal {
             this.name = name;
         }
 
-        public String getName () {
+    Animal() {
+    }
+
+    public String getName () {
             return name;
         }
 

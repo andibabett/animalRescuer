@@ -42,4 +42,11 @@ public class Food {
         this.expiryDate = expiryDate;
     }
 
+    @Override
+    public String toString() {
+        return "Food{" +
+                "foodType='" + foodType + '\'' +
+                ", expiryDate=" + expiryDate +
+                '}';
     }
+}
