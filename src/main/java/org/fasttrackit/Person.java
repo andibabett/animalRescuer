@@ -6,11 +6,12 @@ public class Person {
     private String sex;
     private int age;
 
-    public Person(String sex, int age) {
+    public Person() {
         this.sex = sex;
         this.age = age;
     }
-// set and get
+
+    // set and get
     public String getName() {
         return name;
     }
@@ -34,4 +35,5 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
 }

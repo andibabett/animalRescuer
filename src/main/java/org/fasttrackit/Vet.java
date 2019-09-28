@@ -9,7 +9,7 @@ public class Vet extends Person {
 
 
     // constructor
-    public Vet(String specialization, boolean experience) {
+    public Vet (String specialization, boolean experience) {
         this.specialization = specialization;
         this.experience = experience;
     }
@@ -38,5 +38,6 @@ public class Vet extends Person {
     public void setPrice(double price) {
         this.price = price;
     }
+
 
 }

@@ -2,31 +2,28 @@ package org.fasttrackit;
 
 public class Caine extends Animal {
     //parametrii
-    private String name;
-    private double age;
+   private String race;
+
 
     //constructor
-    public Caine(int health, double hunger, int mood, String name, int age) {
+
+    public Caine(int health, int hunger, int mood, String race) {
         super(health, hunger, mood);
-        this.name = name;
-        this.age = age;
+        this.race = race;
     }
+
+    public Caine(String name, String race) {
+        super(name);
+        this.race = race;
+    }
+
     //set-get
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public double getAge() {
-        return age;
-    }
-    public void setAge(double age) {
-        this.age = age;
+
+    public String getRace() {
+        return race;
     }
 
-    @Override
-    public void mood() {
-
+    public void setRace(String race) {
+        this.race = race;
     }
 }

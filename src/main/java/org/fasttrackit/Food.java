@@ -42,7 +42,4 @@ public class Food {
         this.expiryDate = expiryDate;
     }
 
-    public Food() {
-        super();
-    }
     }

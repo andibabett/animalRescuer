@@ -18,6 +18,8 @@ public class App {
         Food food = new Food("Purina",50, 02.02.2022);
         food.setAmount(2);
 
+        Caine caine = new Caine()
+
         RecreationalActivity recreationalActivity = new RecreationalActivity("running", 10);
 
         Rescuer rescuer = new Rescuer(600, "garden");
@@ -40,6 +42,7 @@ public class App {
 
 
         System.out.println(rescuer+ "give some" + food + "to feed" + animal);
+
         System.out.println(rescuer.getName() + recreationalActivity.getName() + "with" + animal.getName() + ". So" + animal.getName() + "'s mood is"  + animal.getMood());
 
     }

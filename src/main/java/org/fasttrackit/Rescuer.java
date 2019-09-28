@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import javax.sound.midi.Soundbank;
-
 public class Rescuer extends Person {
     //parametrii
     private double avaibleMoney;
@@ -9,20 +7,15 @@ public class Rescuer extends Person {
 
     //constructor
    public Rescuer(double avaibleMoney, String place) {
-        this.avaibleMoney = avaibleMoney;
+       this.avaibleMoney = avaibleMoney;
         this.place = place;
     }
 
     //metoda
-    public void feed(Animal animal, Food foodtype, double hunger) {
+    public void feed(Animal animal, Food foodtype,) {
         System.out.println(getName() + "gave some" + foodtype + "food to" + animal.getName());
-        if (feed("Misa", "Purina", 5); = animal.getHunger() + 1 ;)
-        System.out.println("If I feed" + animal.getName() + "with" + foodtype + "hi's hunger will be" + animal.getHunger());
+
     }
-
-
-
-
     //get-set
     public double getAvaibleMoney() {
         return avaibleMoney;
@@ -39,6 +32,7 @@ public class Rescuer extends Person {
     public void setPlace(String place) {
         this.place = place;
     }
+
 }
 
 
