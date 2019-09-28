@@ -47,4 +47,9 @@ public class Vet extends Person {
                 ", price=" + price +
                 '}';
     }
+
+    public Vet() {
+        super();
+    }
+
 }

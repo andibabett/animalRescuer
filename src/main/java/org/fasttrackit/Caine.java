@@ -2,12 +2,13 @@ package org.fasttrackit;
 
 public class Caine extends Animal {
     //parametrii
-   private String race;
-
+    private String race;
 
     //constructor
-    public Caine(String race) {
-        this.race = race;
+
+
+    public Caine(int health, int hunger, int mood) {
+        super(health, hunger, mood);
     }
 
     //set-get
@@ -19,4 +20,13 @@ public class Caine extends Animal {
     public void setRace(String race) {
         this.race = race;
     }
+
+    @Override
+    public String toString() {
+        return "Caine{" +
+                "race='" + race + '\'' +
+                '}';
+    }
+
+
 }

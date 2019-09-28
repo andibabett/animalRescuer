@@ -10,10 +10,9 @@ public class Food {
     private LocalDate expiryDate;
 
     // constructor
-    public Food(String foodType, double price, LocalDate expiryDate) {
+    public Food(String foodType, double price) {
         this.foodType = foodType;
         this.price = price;
-        this.expiryDate = expiryDate;
     }
 
     //set-get

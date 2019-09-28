@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Person {
 
-    private String name;
+
     private String sex;
     private int age;
 
@@ -12,14 +12,6 @@ public class Person {
     }
 
     // set and get
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSex() {
         return sex;
     }

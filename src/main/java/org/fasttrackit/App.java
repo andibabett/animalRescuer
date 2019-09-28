@@ -15,22 +15,22 @@ public class App {
         animal.setAge(1);
         animal.setWeight(12.6);
 
-        Food food = new Food("Purina",50, 02.02.2022);
+        System.out.println(animal.getMood());
+
+        Food food = new Food("Purina",50);
         food.setAmount(2);
 
-        Caine caine = new Caine("Sheperd");
-
-        RecreationalActivity recreationalActivity = new RecreationalActivity("running", 10);
+        RecreationalActivity recreationalActivity = new RecreationalActivity("fawn", 10);
 
         Rescuer rescuer = new Rescuer(600, "garden");
 
         Vet vet = new Vet("animalBehavior", true);
 
-        Animal animal2 = new Animal(5, 5, 9);
+        Animal animal2 = new Animal(5, 5, 9) ;
         animal2.setAge(3);
         animal2.setWeight(2.2);
 
-        Food food2 = new Food("Purina", 30, 2022.03.22);
+        Food food2 = new Food("Purina", 30);
         food2.setAmount(0.5);
 
         Rescuer rescuer2 = new Rescuer(200,"house");
