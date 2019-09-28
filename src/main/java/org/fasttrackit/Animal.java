@@ -22,11 +22,9 @@ class Animal {
 
     public void mood(int health, double hunger){
         mood = health + hunger;
-        System.out.println("If" + getName()+ "is healthy, he's mood is" + mood );
+        System.out.println("If" + getName()+ "is " +  +"he's mood is" + mood );
     }
-    public void mood() {
-        System.out.println(name + "this is mood");
-    }
+
 // get-set
     public String getName() {
         return name;

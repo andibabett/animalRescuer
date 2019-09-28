@@ -15,7 +15,7 @@ public class App {
         animal.setAge(1);
         animal.setWeight(12.6);
 
-        Food food = new Food("Purina",50, 2020);
+        Food food = new Food("Purina",50, 02.02.2022);
         food.setAmount(2);
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("running", 10);
@@ -28,7 +28,7 @@ public class App {
         animal2.setAge(3);
         animal2.setWeight(2.2);
 
-        Food food2 = new Food("Purina", 30, 2022);
+        Food food2 = new Food("Purina", 30, 22.03.2022);
         food2.setAmount(0.5);
 
         Rescuer rescuer2 = new Rescuer(200,"house");
@@ -42,4 +42,5 @@ public class App {
         System.out.println(rescuer+ "give some" + food + "to feed" + animal);
 
     }
+
 }

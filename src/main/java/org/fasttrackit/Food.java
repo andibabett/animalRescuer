@@ -41,4 +41,9 @@ public class Food {
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
     }
+
+    public Food() {
+        super();
+    }
+
 }

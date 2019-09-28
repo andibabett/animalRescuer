@@ -12,7 +12,7 @@ public class RecreationalActivity {
         this.time = time;
     }
     // metoda
-    public void activity()
+
 
     // get-set
     public String getName() {
