@@ -45,6 +45,7 @@ public class App {
 
         System.out.println(rescuer.getName() + recreationalActivity.getName() + "with" + animal.getName() + ". So" + animal.getName() + "'s mood is"  + animal.getMood());
 
+        System.out.println(rescuer.getName() + "mood is" + animal.getMood() + "when" + rescuer.getName() + recreationalActivity.getName() + "with him");
     }
 
 }
