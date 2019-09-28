@@ -18,7 +18,7 @@ public class App {
         Food food = new Food("Purina",50, 02.02.2022);
         food.setAmount(2);
 
-        Caine caine = new Caine()
+        Caine caine = new Caine("Sheperd");
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("running", 10);
 

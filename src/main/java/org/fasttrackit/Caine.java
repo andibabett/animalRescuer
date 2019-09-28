@@ -6,14 +6,7 @@ public class Caine extends Animal {
 
 
     //constructor
-
-    public Caine(int health, int hunger, int mood, String race) {
-        super(health, hunger, mood);
-        this.race = race;
-    }
-
-    public Caine(String name, String race) {
-        super(name);
+    public Caine(String race) {
         this.race = race;
     }
 
