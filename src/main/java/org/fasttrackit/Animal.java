@@ -42,7 +42,7 @@ class Animal {
         this.health = health;
     }
 
-    public double getHunger() {
+    public int getHunger() {
         return hunger;
     }
 

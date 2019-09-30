@@ -21,12 +21,7 @@ public class Caine extends Animal {
         this.race = race;
     }
 
-    @Override
-    public String toString() {
-        return "Caine{" +
-                "race='" + race + '\'' +
-                '}';
-    }
+
 
 
 }

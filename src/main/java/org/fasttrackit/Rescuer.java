@@ -13,14 +13,13 @@ public class Rescuer extends Person {
     }
 
     //metoda
-    public static void feed() {
-        feed();
+    public void feed(Animal animal, Food foodtype) {
+        animal.setHunger(animal.getHunger() - 1);
+        System.out.println(getName() + "gave some" + foodtype.getFoodType() + "food to" + animal.getName());
     }
 
-    //metoda
-    public void feed(Animal animal, Food foodtype) {
-        double feed = animal.getMood() + 1;
-        System.out.println(getName() + "gave some" + foodtype + "food to" + animal.getName());
+    public void activity(Animal animal, RecreationalActivity recreationalActivity) {
+        System.out.println(getName() + "have some" + recreationalActivity.getName() + "with" + animal.getName());
     }
 
     //get-set
@@ -46,14 +45,6 @@ public class Rescuer extends Person {
 
     public void setPlace(String place) {
         this.place = place;
-    }
-
-    @Override
-    public String toString() {
-        return "Rescuer{" +
-                "avaibleMoney=" + avaibleMoney +
-                ", place='" + place + '\'' +
-                '}';
     }
 
 }
