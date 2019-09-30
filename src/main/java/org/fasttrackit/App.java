@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
+
 /**
  * Hello animalute!
  */
@@ -19,6 +21,7 @@ public class App {
 
         Food food = new Food("Purina",50);
         food.setAmount(2);
+        food.setExpiryDate(LocalDate.of(2020, 12, 5));
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("fawn", 10);
 
@@ -32,6 +35,7 @@ public class App {
 
         Food food2 = new Food("Purina", 30);
         food2.setAmount(0.5);
+        food.setExpiryDate(LocalDate.of(2022, 03, 25));
 
         Rescuer rescuer2 = new Rescuer(200,"house");
 
