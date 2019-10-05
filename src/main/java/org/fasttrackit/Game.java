@@ -1,8 +1,6 @@
 package org.fasttrackit;
 
 
-import sun.security.mscapi.CPublicKey;
-
 public class Game {
 
     private Vet vet;

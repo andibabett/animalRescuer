@@ -7,11 +7,12 @@ public class Rescuer extends Person {
     private String place;
 
     //constructor
-    public Rescuer(double avaibleMoney, String place) {
+    public Rescuer(String name, int age, double avaibleMoney) {
         this.avaibleMoney = avaibleMoney;
-        this.place = place;
+        this.name = name;
+        this.setAge(age);
     }
-
+    public static void main(String[] args){}
     //metoda
     public void feed(Animal animal, Food foodtype) {
         animal.setHunger(animal.getHunger() - 1);
@@ -47,7 +48,14 @@ public class Rescuer extends Person {
         this.place = place;
     }
 
-
+    @Override
+    public String toString() {
+        return "Rescuer{" +
+                "name='" + name + '\'' +
+                ", avaibleMoney=" + avaibleMoney +
+                ", place='" + place + '\'' +
+                '}';
+    }
 }
 
 
