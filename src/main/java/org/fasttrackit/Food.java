@@ -19,33 +19,34 @@ public class Food {
     public String getFoodType() {
         return foodType;
     }
+
     public void setFoodType(String foodType) {
         this.foodType = foodType;
     }
+
     public double getPrice() {
         return price;
     }
+
     public void setPrice(double price) {
         this.price = price;
     }
+
     public double getAmount() {
         return amount;
     }
+
     public void setAmount(double amount) {
         this.amount = amount;
     }
+
     public LocalDate getExpiryDate() {
         return expiryDate;
     }
+
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
     }
 
-    @Override
-    public String toString() {
-        return "Food{" +
-                "foodType='" + foodType + '\'' +
-                ", expiryDate=" + expiryDate +
-                '}';
-    }
+
 }

@@ -47,6 +47,7 @@ public class Rescuer extends Person {
         this.place = place;
     }
 
+
 }
 
 

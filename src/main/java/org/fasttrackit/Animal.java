@@ -85,5 +85,4 @@ class Animal {
                 ", weight=" + weight +
                 '}';
     }
-
 }

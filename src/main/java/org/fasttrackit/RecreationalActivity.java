@@ -28,13 +28,7 @@ public class RecreationalActivity {
         this.time = time;
     }
 
-    @Override
-    public String toString() {
-        return "RecreationalActivity{" +
-                "name='" + name + '\'' +
-                ", time=" + time +
-                '}';
-    }
+
 }
 
 
