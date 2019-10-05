@@ -14,14 +14,24 @@ public class Rescuer extends Person {
     }
     public static void main(String[] args){}
     //metoda
-    public void feed(Animal animal, Food foodtype) {
+    public void feed(Animal animal, Food food) {
         animal.setHunger(animal.getHunger() - 1);
-        System.out.println(getName() + "gave some" + foodtype.getFoodType() + "food to" + animal.getName());
+        System.out.println(getName() + "gave some" + food.getFoodType() + "food to" + animal.getName());
+        if (animal.getFavoriteFood()== food.getFoodType())
+        {
+            animal.setMood(animal.getMood()+ 2);
+            System.out.println(animal.getName()+"'s mood after she receives "+animal.getFavoriteFood()+ "is" + animal.getMood());
+        }
     }
 
     public void activity(Animal animal, RecreationalActivity recreationalActivity) {
         System.out.println(getName() + "have some" + recreationalActivity.getName() + "with" + animal.getName());
         animal.setMood(animal.getMood() + recreationalActivity.getMoodIncrease());
+        if (animal.getFavoriteRecreationalActivity()==recreationalActivity.getName())
+        {
+            animal.setMood(animal.getMood()+recreationalActivity.getMoodIncrease()+2);
+        }
+        else animal.setMood(animal.getMood()+recreationalActivity.getMoodIncrease());
     }
 
     //get-set

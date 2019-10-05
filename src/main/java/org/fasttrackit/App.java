@@ -26,6 +26,8 @@ public class App {
         Animal animal2 = new Animal(5, 5);
         animal2.setAge(3);
         animal2.setWeight(2.2);
+        animal.setFavoriteRecreationalActivity("Scrape");
+        animal.setFavoriteFood("Purina");
 
         Caine caine = new Caine("Catelus");
 

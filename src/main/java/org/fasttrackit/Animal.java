@@ -8,6 +8,8 @@ class Animal {
     private double age;
     private int mood;
     private double weight;
+    private String favoriteFood;
+    private String favoriteRecreationalActivity;
 
     //constructor
     public Animal(int health, int hunger) {
@@ -60,8 +62,25 @@ class Animal {
         return mood;
     }
 
+    public String getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public void setFavoriteFood(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+    public String getFavoriteRecreationalActivity() {
+        return favoriteRecreationalActivity;
+    }
+
+    public void setFavoriteRecreationalActivity(String scrape) {
+        this.favoriteRecreationalActivity = favoriteRecreationalActivity;
+    }
+
     public void setMood(int mood) {
         this.mood = mood;
+
     }
 
     public double getWeight() {
@@ -81,6 +100,8 @@ class Animal {
                 ", age=" + age +
                 ", mood=" + mood +
                 ", weight=" + weight +
+                ", favoriteFood='" + favoriteFood + '\'' +
+                ", favoriteRecreationalActivity='" + favoriteRecreationalActivity + '\'' +
                 '}';
     }
 }
