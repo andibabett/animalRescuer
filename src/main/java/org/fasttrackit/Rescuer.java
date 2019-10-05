@@ -21,6 +21,7 @@ public class Rescuer extends Person {
 
     public void activity(Animal animal, RecreationalActivity recreationalActivity) {
         System.out.println(getName() + "have some" + recreationalActivity.getName() + "with" + animal.getName());
+        animal.setMood(animal.getMood() + recreationalActivity.getMoodIncrease());
     }
 
     //get-set

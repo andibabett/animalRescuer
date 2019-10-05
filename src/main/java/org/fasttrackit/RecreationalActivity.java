@@ -4,12 +4,12 @@ public class RecreationalActivity {
 
     // parametrii
     private String name;
-    private double time;
+    private int moodIncrease;
 
     // constructor
-    public RecreationalActivity(String name, double time) {
+    public RecreationalActivity(String name, int moodIncrease) {
         this.name = name;
-        this.time = time;
+        this.moodIncrease = moodIncrease;
     }
     // get-set
     public String getName() {
@@ -20,12 +20,12 @@ public class RecreationalActivity {
         this.name = name;
     }
 
-    public double getTime() {
-        return time;
+    public int getMoodIncrease() {
+        return moodIncrease;
     }
 
-    public void setTime(double time) {
-        this.time = time;
+    public void setTime(int moodIncrease) {
+        this.moodIncrease = moodIncrease;
     }
 
 

@@ -9,7 +9,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Animal animal = new Animal(9, 6, 8);
+        Animal animal = new Animal(9, 6);
         animal.setName("Misa");
         animal.setAge(1);
         animal.setWeight(12.6);
@@ -23,7 +23,7 @@ public class App {
         Rescuer rescuer = new Rescuer("Andi", 28, 520);
 
 
-        Animal animal2 = new Animal(5, 5, 9);
+        Animal animal2 = new Animal(5, 5);
         animal2.setAge(3);
         animal2.setWeight(2.2);
 
@@ -46,9 +46,18 @@ public class App {
         rescuer.feed(animal, food);
         rescuer.activity(animal, recreationalActivity);
 
-        System.out.println(animal.getMood());
-        System.out.println(caine.getMood());
-        System.out.println(cat.getMood());
+        System.out.println(animal.positiveMood());
+        System.out.println(caine.positiveMood());
+        System.out.println(cat.positiveMood());
+
+        System.out.println(animal.getName() + "'s hunger level is" + animal.getHunger());
+        rescuer.feed(animal, food);
+        System.out.println("After" + animal.getName() + "ate, her hunger level was : " + animal.getHunger());
+
+        System.out.println(animal.getName() + "have" + recreationalActivity.getName() + "with" + rescuer.getName()+ ", and"
+                        + animal.getName() + "'s mood is: " + animal.getMood());
+        rescuer.activity(animal, recreationalActivity);
+        System.out.println("After" + recreationalActivity.getName() + "," + animal.getName()+"' mood was: "+ animal.getMood() );
 
     }
 

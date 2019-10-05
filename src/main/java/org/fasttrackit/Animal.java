@@ -6,19 +6,17 @@ class Animal {
     private int health;
     private int hunger;
     private double age;
-    private double mood;
+    private int mood;
     private double weight;
 
     //constructor
-    public Animal(int health, int hunger, int mood) {
+    public Animal(int health, int hunger) {
         this.health = health;
         this.hunger = hunger;
-        this.mood = mood;
     }
 
-    public double mood(double mood, Rescuer rescuer, RecreationalActivity recreationalActivity) {
-        System.out.println(getName() + "mood is" + mood + "when" + rescuer.getName() + recreationalActivity.getName() + "with him");
-        return mood;
+    public String positiveMood() {
+        return "The animal is happy!";
     }
 
     // get-set
@@ -58,11 +56,11 @@ class Animal {
         this.age = age;
     }
 
-    public double getMood() {
+    public int getMood() {
         return mood;
     }
 
-    public void setMood(double mood) {
+    public void setMood(int mood) {
         this.mood = mood;
     }
 

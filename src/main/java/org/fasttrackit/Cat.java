@@ -6,12 +6,9 @@ public class Cat extends Animal{
         super(name);
     }
 
-    public Cat(int health, int hunger, int mood) {
-        super(health, hunger, mood);
-    }
 
     @Override
-    public double mood(double mood, Rescuer rescuer, RecreationalActivity recreationalActivity) {
-        return super.mood(mood, rescuer, recreationalActivity);
+    public String positiveMood() {
+        return "Cat sleep.";
     }
 }
