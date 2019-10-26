@@ -72,7 +72,6 @@ public class Game {
     }
 
 
-    }
 
     public Vet getVet() {
         return vet;
