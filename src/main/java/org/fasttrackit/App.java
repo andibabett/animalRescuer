@@ -64,5 +64,21 @@ public class App {
 
         animal.positiveMood();
         System.out.println(animal.getName() + "'s mood is: " + animal.positiveMood() + "if you play with him!");
+
+        Animal caine1 = new Caine("rex");
+        caine1.setHunger(6);
+        caine1.setAge(5);
+        caine.setWeight(6.6);
+        caine.setMood(6);
+
+        Animal cat1 = new Cat("pisi");
+        cat1.setAge(5);
+        cat1.setHunger(5);
+        cat1.setWeight(2);
+        cat1.setMood(8);
+
+
+
+
     }
 }

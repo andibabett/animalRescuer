@@ -71,3 +71,54 @@ public class Game {
         animal.setName(name);
     }
 
+
+    }
+
+    public Vet getVet() {
+        return vet;
+    }
+
+    public void setVet(Vet vet) {
+        this.vet = vet;
+    }
+
+    public Rescuer getRescuer() {
+        return rescuer;
+    }
+
+    public void setRescuer(Rescuer rescuer) {
+        this.rescuer = rescuer;
+    }
+
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+
+    public Scanner getIn() {
+        return in;
+    }
+
+    public void setIn(Scanner in) {
+        this.in = in;
+    }
+
+    public List<Food> getAvailableFood() {
+        return availableFood;
+    }
+
+    public void setAvailableFood(List<Food> availableFood) {
+        this.availableFood = availableFood;
+    }
+
+    public List<RecreationalActivity> getAvaibleActivities() {
+        return avaibleActivities;
+    }
+
+    public void setAvaibleActivities(List<RecreationalActivity> avaibleActivities) {
+        this.avaibleActivities = avaibleActivities;
+    }
+}

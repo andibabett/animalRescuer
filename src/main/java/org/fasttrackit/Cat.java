@@ -13,5 +13,4 @@ public class Cat extends Animal{
         }
         return positiveMood();
     }
-
 }
