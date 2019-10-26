@@ -6,9 +6,12 @@ public class Cat extends Animal{
         super(name);
     }
 
-
     @Override
     public String positiveMood() {
-        return "Cat sleep.";
+        if (getMood()> 5);{
+            System.out.println(getName()+"is happy. She's purrs");
+        }
+        return positiveMood();
     }
+
 }

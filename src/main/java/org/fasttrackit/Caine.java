@@ -9,10 +9,6 @@ public class Caine extends Animal {
         super(name);
     }
 
-    @Override
-    public String positiveMood() {
-        return "Dog swinging his tail.";
-    }
 
     public String getRace() {
         return race;
@@ -22,5 +18,16 @@ public class Caine extends Animal {
         this.race = race;
     }
 
+
+
+    @Override
+    public String positiveMood() {
+        if (getMood() > 8){
+            System.out.println(getName()+"is happy. He's swinging his tail.");
+        } else {
+        System.out.println(getName()+"nedd to play. Please play with"+getName());
+
+        }
+    return positiveMood();}
 
 }

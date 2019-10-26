@@ -7,8 +7,7 @@ public class Rescuer extends Person {
     private String place;
 
     //constructor
-    public Rescuer(String name, int age, double avaibleMoney) {
-        this.avaibleMoney = avaibleMoney;
+    public Rescuer(String name, int age) {
         this.name = name;
         this.setAge(age);
     }
@@ -17,7 +16,7 @@ public class Rescuer extends Person {
     public void feed(Animal animal, Food food) {
         animal.setHunger(animal.getHunger() - 1);
         System.out.println(getName() + "gave some" + food.getFoodType() + "food to" + animal.getName());
-        if (animal.getFavoriteFood()== food.getFoodType())
+        if (animal.getFavoriteFood().equals(food.getFoodType()))
         {
             animal.setMood(animal.getMood()+ 2);
             System.out.println(animal.getName()+"'s mood after she receives "+animal.getFavoriteFood()+ "is" + animal.getMood());
@@ -27,7 +26,7 @@ public class Rescuer extends Person {
     public void activity(Animal animal, RecreationalActivity recreationalActivity) {
         System.out.println(getName() + "have some" + recreationalActivity.getName() + "with" + animal.getName());
         animal.setMood(animal.getMood() + recreationalActivity.getMoodIncrease());
-        if (animal.getFavoriteRecreationalActivity()==recreationalActivity.getName())
+        if (animal.getFavoriteRecreationalActivity().equals(recreationalActivity.getName()))
         {
             animal.setMood(animal.getMood()+recreationalActivity.getMoodIncrease()+2);
         }
@@ -67,6 +66,7 @@ public class Rescuer extends Person {
                 ", place='" + place + '\'' +
                 '}';
     }
+
 }
 
 

@@ -18,7 +18,7 @@ class Animal {
     }
 
     public String positiveMood() {
-        return "The animal is happy!";
+        return (getName() + "is happy!");
     }
 
     // get-set
@@ -80,7 +80,6 @@ class Animal {
 
     public void setMood(int mood) {
         this.mood = mood;
-
     }
 
     public double getWeight() {
@@ -104,4 +103,6 @@ class Animal {
                 ", favoriteRecreationalActivity='" + favoriteRecreationalActivity + '\'' +
                 '}';
     }
+
+
 }

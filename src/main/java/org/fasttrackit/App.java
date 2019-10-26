@@ -20,7 +20,7 @@ public class App {
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("fawn", 10);
 
-        Rescuer rescuer = new Rescuer("Andi", 28, 520);
+        Rescuer rescuer = new Rescuer("Andi", 28);
 
 
         Animal animal2 = new Animal(5, 5);
@@ -29,15 +29,11 @@ public class App {
         animal.setFavoriteRecreationalActivity("Scrape");
         animal.setFavoriteFood("Purina");
 
-        Caine caine = new Caine("Catelus");
-
-        Cat cat = new Cat("Pisi");
-
         Food food2 = new Food("Purina", 30);
         food2.setAmount(0.5);
         food.setExpiryDate(LocalDate.of(2022, 03, 25));
 
-        Rescuer rescuer2 = new Rescuer("Marian", 34, 960);
+        Rescuer rescuer2 = new Rescuer("Marian", 34);
 
         System.out.println(rescuer + "give some" + food + "to feed" + animal);
 
@@ -48,19 +44,25 @@ public class App {
         rescuer.feed(animal, food);
         rescuer.activity(animal, recreationalActivity);
 
-        System.out.println(animal.positiveMood());
-        System.out.println(caine.positiveMood());
-        System.out.println(cat.positiveMood());
-
         System.out.println(animal.getName() + "'s hunger level is" + animal.getHunger());
         rescuer.feed(animal, food);
         System.out.println("After" + animal.getName() + "ate, her hunger level was : " + animal.getHunger());
 
-        System.out.println(animal.getName() + "have" + recreationalActivity.getName() + "with" + rescuer.getName()+ ", and"
-                        + animal.getName() + "'s mood is: " + animal.getMood());
+        System.out.println(animal.getName() + "have" + recreationalActivity.getName() + "with" + rescuer.getName() + ", and"
+                + animal.getName() + "'s mood is: " + animal.getMood());
         rescuer.activity(animal, recreationalActivity);
-        System.out.println("After" + recreationalActivity.getName() + "," + animal.getName()+"' mood was: "+ animal.getMood() );
+        System.out.println("After" + recreationalActivity.getName() + "," + animal.getName() + "' mood was: " + animal.getMood());
 
+        Cat cat = new Cat("lisa");
+        cat.positiveMood();
+        System.out.println(cat.getName() + "'s mood is" + cat.positiveMood() + "when" + cat.getName() + "is sleep.");
+
+        Caine caine = new Caine("max");
+        caine.positiveMood();
+        System.out.println(caine.getName() + "'s mood is" + caine.positiveMood() + "when you play with him");
+
+
+        animal.positiveMood();
+        System.out.println(animal.getName() + "'s mood is: " + animal.positiveMood() + "if you play with him!");
     }
-
 }
