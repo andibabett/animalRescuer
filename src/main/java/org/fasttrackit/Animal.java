@@ -10,6 +10,7 @@ class Animal {
     private double weight;
     private String favoriteFood;
     private String favoriteRecreationalActivity;
+    private String type;
 
     //constructor
     public Animal(int health, int hunger) {
@@ -88,6 +89,14 @@ class Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
